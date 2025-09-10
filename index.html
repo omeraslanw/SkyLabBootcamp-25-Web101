@@ -1,0 +1,36 @@
+<!-- Bu kısım  dosyamızın HTML standartında olacağını belirtir-->
+<!DOCTYPE html>
+<!-- HTML kodlarının başladığı kısım-->
+<html>
+    <!-- HTML dokümanının başlık ve stil gibi meta bilgilerini içerir-->
+    <head>
+        <title>Sayı Tahmin Oyunu</title>
+        <link rel = "stylesheet" href = "style.css">
+    </head>
+    <!-- HTML dokümanının asıl içeriğini barındıran kısım-->
+    <body>
+        <!-- Ana konteyner, tüm içeriği kapsar-->
+        <div class = "container">
+            <!-- Başlık ve açıklama kısmı-->
+            <div class="header">
+                <h1 id = "title">Sayı Tahmin Oyunu</h1>
+                <h3 id = "description">1 ile 100 Arasında Bir Tam Sayı Girin</h3>
+            </div>
+            <!-- Kullanıcı giriş alanı ve buton-->
+            <div class = "input-area">
+                <input type = "number" id = "input" placeholder = "Bir tam sayı girin">
+                <button id = "btn">Tahmin Et</button>
+            </div>
+            <!-- Mesaj ve deneme hakkı gösterim alanı-->
+            <div class="message-area">
+                    <p id = "message-text"></p>
+                    <h3 id = "tries-title">Tahmin Hakkınız:</h3>
+                    <p id = "number-of-tries">6</p>
+            </div>
+            </div>
+        </div>
+        
+        <!-- JavaScript dosyasını dahil eder-->
+        <script src = "app.js"></script>
+    </body>
+</html>

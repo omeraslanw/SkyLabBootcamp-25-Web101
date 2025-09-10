@@ -1,0 +1,121 @@
+/* Genel Stil Ayarları */
+* {
+    /* Tüm elementlerin padding ve border değerlerini genişliğe dahil et */
+    /* Bu, kutu boyutlandırmayı kolaylaştırır. */
+    box-sizing: border-box; 
+    margin: 0;
+    padding: 0;
+}
+
+/* Body Stil Alanı */
+body {
+    background-color: #2c3e50; /* Arka plan rengi */
+    color: #ecf0f1; /* Metin rengi */
+    font-family: Arial, Helvetica, sans-serif;
+    
+    /* Flexbox ile Tam Ortaya Hizalama */
+    /* Bu üç satır, içindeki container'ı sayfanın tam ortasına yerleştirir */
+    display: flex;
+    justify-content: center; /* Yatayda ortala */
+    align-items: center;    /* Dikeyde ortala */
+    
+    /* Sayfanın yüksekliğinin en az ekranın yüksekliği kadar olmasını sağlar */
+    min-height: 100vh; 
+}
+
+/* Ana Oyun Kutusu Stili */
+.container {
+    background-color: #34495e;
+    padding: 30px;
+    border-radius: 10px; /* Kenarları yuvarlaklaştırır */
+    
+    /* Kutuya hafif bir gölge ekleyerek derinlik hissi verir */
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2); 
+    
+    text-align: center; /* İçindeki tüm metinleri ortalar */
+    width: 90%; /* Mobil cihazlar için genişlik ayarı */
+    max-width: 400px; /* Geniş ekranlarda çok büyümesini engeller */
+}
+
+/* Başlık Alanı Stili */
+.header {
+    margin-bottom: 25px; /* Altındaki elementle arasına boşluk koyar */
+}
+
+
+/* Input (Sayı Giriş Alanı) Stili */
+
+#input {
+    background-color: #2c3e50;
+    color: #ecf0f1;
+    
+    border: 2px solid #7f8c8d; /* Hafif bir çerçeve */
+    border-radius: 8px; /* Kenarları yuvarlaklaştırır */
+    
+    padding: 12px;
+    width: 100%; /* İçinde bulunduğu kutunun tamamını kaplar */
+    text-align: center;
+    font-size: 18px;
+    margin-bottom: 15px; /* Butonla arasına boşluk koyar */
+    
+    /* Değişikliklerin yumuşak bir şekilde gerçekleşmesi için (0.3 saniye) */
+    transition: border-color 0.3s ease;
+}
+
+/* Kullanıcı input alanına tıkladığında (odaklandığında) */
+#input:focus {
+    outline: none; /* Tarayıcının varsayılan mavi çerçevesini kaldırır */
+    border-color: #34495e; /* Çerçeve rengini canlı bir renkle değiştirir */
+}
+
+/* Input içindeki placeholder metninin rengi */
+#input::placeholder {
+    color: #95a5a6;
+}
+
+
+/* Buton Stili */
+
+#btn {
+    background-color: #1abc9c;
+    color: white;
+    
+    border: none; /* Çerçeveyi kaldırır */
+    border-radius: 8px;
+    padding: 12px 20px;
+    width: 100%;
+    
+    font-size: 18px;
+    font-weight: bold; /* Yazıyı kalın yapar */
+    cursor: pointer; /* Üzerine gelince fare imlecini el şekline getirir */
+    
+    /* Renk değişiminin yumuşak olması için */
+    transition: background-color 0.3s ease;
+}
+
+/* Fare ile butonun üzerine gelindiğinde */
+#btn:hover {
+    background-color: #16a085; /* Rengi biraz daha koyu yapar */
+}
+
+/* Mesaj ve Deneme Hakkı Alanı Stili */
+
+.message-area {
+    margin-top: 20px;
+    min-height: 40px; /* Alanın sabit bir yüksekliği olmasını sağlar */
+    font-size: 1.1em;
+}
+
+#number-of-tries {
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #1abc9c; /* Butonla aynı vurgu rengi */
+}
+
+ #title{
+    margin-bottom: 10px;
+ }
+
+ #message-text{
+    margin-bottom: 10px;
+ }
