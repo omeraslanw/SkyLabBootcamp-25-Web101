@@ -21,6 +21,15 @@ Oyunun amacı, 1 ile 100 arasında rastgele belirlenmiş bir sayıyı, size veri
 - Oyun sonunda kazanma veya kaybetme durumuna göre bilgilendirme mesajları.
 - Boş veya geçersiz (1-100 dışı) girişlere karşı kullanıcıyı uyarma.
 
+## Geliştirme Ödevleri (Beklenen Yeni Özellikler)
+
+Bu projeyi daha da geliştirmek için aşağıdaki özellikleri ekleyebilirsiniz:
+
+1.  **CSS Tasarımını Özelleştirme:** `style.css` dosyasını düzenleyerek oyuna kendi zevkinize göre modern ve şık bir görünüm kazandırın.
+2.  **Yeniden Başlat Butonu:** Oyunu sıfırlayacak bir "Yeniden Başlat" butonu ekleyin. Bu butona tıklandığında kalan deneme hakkı, deneme sayısı ve mesajlar başlangıç durumuna dönmelidir.
+3.  **Rastgele Sayı Üretimi:** Şu anki sabit sayı yerine, oyun her başladığında ve "Yeniden Başlat" butonuna her basıldığında 1 ile 100 arasında rastgele yeni bir sayı üretilmesini sağlayın. (`Math.random()` fonksiyonunu araştırabilirsiniz.)
+4.  **Yapılan Deneme Sayacı:** Kalan deneme hakkının yanı sıra, kullanıcının o ana kadar kaç deneme yaptığını gösteren yeni bir alan ekleyin. Bu sayaç her tahminde bir artmalıdır.
+
 ## Kullanılan Teknolojiler
 
 - **HTML5:** Sayfanın temel iskeleti ve içeriği.
